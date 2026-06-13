@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link href="TicTacToe.css" rel="stylesheet" />
+</head>
+
+<body class="background">
+    <section class="title">
+        <h1>Tic Tac Toe</h1>
+    </section>
+    <section class="display">
+        Player <span class="display-player playerX">X</span>'s turn
+    </section>
+    <section class="container">
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+    </section>
+    <section class="display announcer hide"></section>
+
+    <button class="reset">Reset Game</button>
+
+    <table>
+        <thead>
+            <tr>
+                <th>X Wins</th>
+                <th>O Wins</th>
+                <th>Ties</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="xWins">0</td>
+                <td id="oWins">0</td>
+                <td id="ties">0</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="TicTacToe.js"></script>
+</body>
+
+</html>
